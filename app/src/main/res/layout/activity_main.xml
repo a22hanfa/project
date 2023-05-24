@@ -11,6 +11,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="About"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sort_category_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        app:layout_constraintStart_toEndOf="@+id/aboutButton"
+        app:layout_constraintEnd_toStartOf="@+id/sort_location_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sort_location_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        app:layout_constraintStart_toEndOf="@+id/sort_category_button"
+        app:layout_constraintEnd_toStartOf="@+id/sort_name_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sort_name_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@+id/sort_location_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

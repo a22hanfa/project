@@ -26,12 +26,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     @NonNull
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // Inflate the item layout and create a ViewHolder
         View view = layoutInflater.inflate(R.layout.item_layout, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        // Bind data to the ViewHolder
         inputDecoder item = items.get(position);
         holder.textViewName.setText(item.getName());
         holder.textViewLocation.setText(item.getLocation());
@@ -48,9 +50,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         ViewHolder(View itemView) {
             super(itemView);
+
+            // Initialize TextViews
             textViewName = itemView.findViewById(R.id.text_view_name);
             textViewLocation = itemView.findViewById(R.id.text_view_location);
             textViewCategory = itemView.findViewById(R.id.text_view_category);
+
+            // Set click listener for the item view
             itemView.setOnClickListener(this);
         }
 
