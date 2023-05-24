@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Project</string>
+    <string name="app_name">Police News</string>
+    <string name="aboutText">This apps function is providing you with information about the latest crime news. The information about the crimes are directly taken from the Police\'s website. </string>
+    <string name="aboutTitle">About this app</string>
 </resources>
